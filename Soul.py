@@ -1,7 +1,7 @@
 import discord,settings,random
 
 client = discord.Client()
-
+# comentario2
 @client.event
 async def on_message(message):
     if(message.author == client.user):
