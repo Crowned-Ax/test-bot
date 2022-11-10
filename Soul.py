@@ -20,5 +20,5 @@ async def hola():
 async def on_ready():
     print("Soul v{} is On".format(settings.version))
 
-
+# solo agregando un comentario
 client.run(settings.bot_token)
