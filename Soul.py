@@ -17,6 +17,27 @@ async def on_message(message):
         msg = 'solo metiendo spam, {0.author.mention}'.format(message)
         await client.send_message(message.channel, msg, tts=True)
 @client.command
+async def on_message(message):
+    if(message.author == client.user):
+        return
+    if message.content.startswith('!z'):
+        msg = 'solo metiendo spam, {0.author.mention}'.format(message)
+        await client.send_message(message.channel, msg, tts=True)
+@client.command
+async def on_message(message):
+    if(message.author == client.user):
+        return
+    if message.content.startswith('!z'):
+        msg = 'solo metiendo spam, {0.author.mention}'.format(message)
+        await client.send_message(message.channel, msg, tts=True)
+@client.command
+async def on_message(message):
+    if(message.author == client.user):
+        return
+    if message.content.startswith('!z'):
+        msg = 'solo metiendo spam, {0.author.mention}'.format(message)
+        await client.send_message(message.channel, msg, tts=True)
+@client.command
 async def hola():
     p_return = [
         'hola {o.author.mention}',
