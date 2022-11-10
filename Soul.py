@@ -9,6 +9,13 @@ async def on_message(message):
     if message.content.startswith('!z'):
         msg = 'La Cazeria de Ganzitos ha comenzado, {0.author.mention}'.format(message)
         await client.send_message(message.channel, msg, tts=True)
+        @client.event
+async def on_message(message):
+    if(message.author == client.user):
+        return
+    if message.content.startswith('!z'):
+        msg = 'solo metiendo spam, {0.author.mention}'.format(message)
+        await client.send_message(message.channel, msg, tts=True)
 @client.command
 async def hola():
     p_return = [
